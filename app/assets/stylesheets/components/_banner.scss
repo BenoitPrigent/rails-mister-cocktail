@@ -1,0 +1,31 @@
+.banner {
+  background-image: asset-url('banner.png');
+  color: white;
+  height: 100vh;
+  /* if you have a 70px navbar => height: calc(100vh - 70px); */
+  background-size: cover !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;;
+  align-items: center;
+}
+
+.banner-content {
+  margin-right: 150px;
+  text-align: center;
+}
+
+
+.banner h1 {
+  font-size: 25px;
+  color: #215b63;
+  font-weight: bold;
+  text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+}
+.banner p {
+  font-size: 25px;
+  font-weight: lighter;
+  color: rgb(255, 255, 255);
+  opacity: 0.6;
+  margin-bottom: 30px;
+}

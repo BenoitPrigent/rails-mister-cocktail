@@ -24,3 +24,9 @@ for num in [10, 11, 12]
 end
 
 puts "Finished!"
+
+
+puts 'Cleaning cocktail database...'
+Cocktail.destroy_all
+
+Cocktail.create(name: "Test-Cocktail")

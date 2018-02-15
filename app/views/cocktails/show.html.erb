@@ -1,0 +1,39 @@
+
+
+<div class="container">
+
+  <h1> <%=  @cocktail.name %> </h1>
+
+  <div class="row">
+    <% @doses.each do |dose| %>
+      <div class="card">
+        <h2> <%= dose.ingredient.name %> </h2>
+        <h2> <%= dose.description %> </h2>
+        <%= link_to "Delete", dose_path(dose), method: :delete, class: "btn btn-danger" %>
+      </div>
+    <% end %>
+  </div>
+
+
+
+  <h1> Add a new Dose </h1>
+
+  <%= simple_form_for([@cocktail, @dose]) do |r|%>
+
+  <div class="row">
+    <%= r.input :description, class: "form-control" %>
+  </div>
+
+  <div class="row">
+   <%= r.association :ingredient, collection: @ingredients, as: :select %>
+  </div>
+
+  <div class="row">
+    <%= r.submit "Add a Dose", class: "btn btn-primary" %>
+  </div>
+
+  <% end %>
+
+</div>
+
+
