@@ -1,0 +1,73 @@
+// BANNER WITH PHOTO
+
+.banner-photo-show {
+  background: url("https://images.unsplash.com/photo-1512103865222-dcf9531c9961?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=99faff00f4f658fc516a6f62d58d9956&auto=format&fit=crop&w=668&q=80");
+  background-position: center;
+  background-size:cover;
+  height: 50vh;
+  width: 100%;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: center;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+
+  h1 {
+    color: white;
+    font-size: 50px;
+    font-family: "Bebas Neue";
+    // color: #5fcc9c;
+    text-shadow: 2px 2px  #215b63;
+  }
+}
+
+// FORM & DOSES
+
+.container-show {
+  display: flex;
+  flex-direction: row;
+}
+
+.left-side-show {
+  width: 50vw;
+  background-color: blue;
+
+}
+
+.right-side-show {
+  width: 50vw;
+  background-color: green;
+}
+
+
+
+// .sticky-card {
+//   margin-top: 30px;
+
+//   // height: 70vh;
+//   width: 40vw;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: space-around;
+//   font-family: "Bebas Neue";
+//   text-align: center;
+//   background-color: white;
+//   box-shadow: 1px 0.5px 1px rgba(220,220, 220, 0.5);
+
+//   h1 {
+//     font-size: 50px;
+//     font-family: "Bebas Neue";
+//     color: #5fcc9c;
+//     text-shadow: 2px 2px  #215b63;
+//   }
+
+//   form {
+//     font-size: 20px;
+//     margin-top: -50px;
+//   }
+
+// }
+
+
