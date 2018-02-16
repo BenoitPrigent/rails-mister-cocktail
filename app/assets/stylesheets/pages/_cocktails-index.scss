@@ -10,12 +10,25 @@
 //   top: 100px;
 // }
 
+.image_background {
+  width: 50vw;
+  position: relative;
+  top: 0px;
+
+}
+
+
+.sticky {
+  position: fixed;
+}
+
 .left-side {
-  background: url("https://images.unsplash.com/photo-1512103865222-dcf9531c9961?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=99faff00f4f658fc516a6f62d58d9956&auto=format&fit=crop&w=668&q=80");
+  // background: url("https://images.unsplash.com/photo-1512103865222-dcf9531c9961?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=99faff00f4f658fc516a6f62d58d9956&auto=format&fit=crop&w=668&q=80");
   background-position: center;
   width: 50vw;
   height: 100vh;
   display: flex;
+  // position: fixed;
   flex-direction: row;
   justify-content: space-around;
   align-items: top;
@@ -26,9 +39,17 @@
   }
 }
 
+.button-div {
+  position: absolute;
+  top: 150px;
+  left: 12vw;
+  z-index: 1;
+}
+
 .right-side {
+  margin-top: 100px;
   padding-top : 10px;
-  height: 100vh;
+  // height: 100vh;
   width: 50vw;
   background-color: rgb(220,220, 220);
 }
@@ -44,7 +65,7 @@
   color: #5fcc9c;
   font-family: "Bebas Neue";
   border-radius: 50px;
-  transition: 0.6s;
+  transition: all 0.6s ease;
 
   &:hover {
     text-decoration: none;
@@ -56,18 +77,19 @@
 }
 
 
-
 .card-cocktails {
   padding: 30px;
   margin: 15px;
   font-size: 50px;
   height: 30vh;
+  display: flex;
   align-items: center;
+  justify-content: center;
   font-family: "Bebas Neue";
   text-align: center;
   background-color: white;
-  box-shadow: 1px 0.5px 1px rgb(210,210, 210);
-  transition: 0.5s;
+  box-shadow: 1px 0.5px 1px rgba(220,220, 220, 0.5);
+  transition: all 0.8s ease;
 
   a {
     text-decoration: none;

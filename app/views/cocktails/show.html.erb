@@ -5,7 +5,7 @@
   <h1> <%=  @cocktail.name %> </h1>
 
   <div class="row">
-    <% @doses.each do |dose| %>
+    <% @cocktail.doses.each do |dose| %>
       <div class="card">
         <h2> <%= dose.ingredient.name %> </h2>
         <h2> <%= dose.description %> </h2>

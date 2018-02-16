@@ -10,7 +10,6 @@ require 'open-uri'
 require 'json'
 
 puts 'Cleaning ingredient database...'
-Ingredient.destroy_all
 
 puts 'Creating ingredients...'
 
@@ -30,3 +29,7 @@ puts 'Cleaning cocktail database...'
 Cocktail.destroy_all
 
 Cocktail.create(name: "Test-Cocktail")
+
+
+puts 'Cleaning dose database'
+Dose.destroy_all

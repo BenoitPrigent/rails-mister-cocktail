@@ -3,9 +3,21 @@
 <div class="container-index">
 
 
-  <div class="left-side">
 
-    <%= link_to "Add a new cocktail", new_cocktail_path, class: " btn-cocktails" %>
+
+    <div class="left-side">
+
+      <div class="sticky">
+
+        <%= image_tag "https://images.unsplash.com/photo-1512103865222-dcf9531c9961?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=99faff00f4f658fc516a6f62d58d9956&auto=format&fit=crop&w=668&q=80", class: "image_background" %>
+
+        <div class="button-div">
+        <%= link_to "Add a new cocktail", new_cocktail_path, class: " btn-cocktails" %>
+        </div>
+
+
+
+    </div>
 
   </div>
 
@@ -15,14 +27,13 @@
 
       <div class="row">
         <% @cocktails.each do |cocktail| %>
-          <div class="card-cocktails col-xs-5">
+          <div class="card-cocktails col-xs-8 col-md-5">
           <%= link_to cocktail.name, cocktail_path(cocktail.id) %> </h2>
           </div>
         <% end %>
       </div>
     </div>
   </div>
-
 
 
 </div>
