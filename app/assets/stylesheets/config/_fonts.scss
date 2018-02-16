@@ -21,7 +21,7 @@ $headers-font: "Raleway", "Helvetica", "sans-serif";
        font-family: 'Bebas Neue';
        font-style: normal;
        font-weight: normal;
-       src: local('Bebas Neue'), url('BebasNeue.woff') format('woff');
+       src: font-url('BebasNeue.woff') format('woff');
 }
 $bebas-neue: 'Bebas Neue';
 
