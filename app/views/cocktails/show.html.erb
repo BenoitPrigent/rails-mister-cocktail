@@ -3,49 +3,39 @@
   <h1> <%=  @cocktail.name %> </h1>
 </div>
 
+
 <div class="container-show">
+  <div class="left-side-show">
+    <div class="sticky-card">
+      <h1> Add a new Dose </h1>
 
-    <div class="left-side-show">
-
-      <div class="sticky-card">
-
-          <h1> Add a new Dose </h1>
-
-          <%= simple_form_for([@cocktail, @dose]) do |r|%>
-
-            <div class="row">
-              <%= r.input :description, class: "form-control" %>
-            </div>
-
-            <div class="row">
-             <%= r.association :ingredient, collection: @ingredients, as: :select %>
-            </div>
-
-            <div class="row">
-              <%= r.submit "Add a Dose", class: "btn btn-primary" %>
-            </div>
-          <% end %>
+      <%= simple_form_for([@cocktail, @dose]) do |r|%>
+        <div class="row">
+          <%= r.input :description, class: "form-control" %>
         </div>
-
-
+      <div class="row">
+       <%= r.association :ingredient, collection: @ingredients, as: :select %>
+      </div>
+      <div class="row">
+        <%= r.submit "Add a Dose", class: "btn btn-primary" %>
+      </div>
+      <% end %>
     </div>
-</div>
+  </div>
 
 
-<div class="right-side-show">
-
-  <div class="container-fluid">
-
+  <div class="right-side-show">
+    <div class="container-fluid">
       <div class="row">
         <% @cocktail.doses.each do |dose| %>
-          <div class="card">
+          <div class="card-ingredient col-xs-8 col-md-10">
             <h2> <%= dose.ingredient.name %> </h2>
-            <h2> <%= dose.description %> </h2>
+            <p> <%= dose.description %> </p>
             <%= link_to "Delete", dose_path(dose), method: :delete, class: "btn btn-danger" %>
           </div>
         <% end %>
       </div>
+    </div>
   </div>
 </div>
-
 
