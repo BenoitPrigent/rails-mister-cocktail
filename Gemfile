@@ -7,7 +7,7 @@ end
 
 # Ruby
 ruby '2.4.3'
-
+gem 'figaro'
 
 # Front
 gem 'cloudinary'
