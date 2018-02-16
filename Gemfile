@@ -10,7 +10,7 @@ ruby '2.4.3'
 
 
 # Front
-
+gem 'cloudinary'
 # Gemfile
 gem 'bootstrap-sass'
 gem 'font-awesome-sass'

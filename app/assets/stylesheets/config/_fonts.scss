@@ -14,3 +14,13 @@ $headers-font: "Raleway", "Helvetica", "sans-serif";
 //        font-url('FontFile.ttf') format('truetype')
 // }
 // $my-font: "Font Name";
+
+
+ @font-face {
+       font-family: 'Bebas Neue';
+       font-style: normal;
+       font-weight: normal;
+       src: local('Bebas Neue'), url('BebasNeue.woff') format('woff');
+}
+$bebas-neue: 'Bebas Neue';
+
